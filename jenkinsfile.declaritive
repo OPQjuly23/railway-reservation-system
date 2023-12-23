@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("Git Checkout"){
       steps{
-           git 'https://github.com/OPQjuly23/Train-Ticket-Reservation-System.git'
+           git 'https://github.com/OPQjuly23/railway-reservation-system.git'
            }
           }
      stage('maven Build'){
