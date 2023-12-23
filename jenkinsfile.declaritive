@@ -1,12 +1,12 @@
-pipeline{
+pipeline {
   agent any
   stages{
-    stage("Git Checkout"){
+    stage("Git Checkout") {
       steps{
            git 'https://github.com/OPQjuly23/railway-reservation-system.git'
            }
           }
-     stage('Build'){
+     stage('Build') {
        steps{
             sh ' mvn clean install '
                          }
